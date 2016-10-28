@@ -1,0 +1,449 @@
+html, body, ol, ul, li, dl, dt, dd, img, form, input {
+  margin: 0; 
+  padding: 0;
+  border: 0;
+	list-style: none;
+}
+body {
+	padding: 0 450px;
+	/* the critical side padding that sets the natural min-width! */
+	/* this BG tiles the area outside the columns */
+	color: #000;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 100.01%;
+	/* this body font-size fixes an IE bug and maintains x-browser uniformity */
+	text-align: center;
+	/* centers the #sizer element in IE5.x/win */
+	background: #EFEADD url(../img/bg_index.jpg) repeat-x top;
+	font-family: 'Raleway', sans-serif !important;
+}
+#sizer {
+  margin: 0 auto; /* centers #sizer in standard browsers */
+  padding: 0;
+  width: 100%; /* this value controls liquidity; 0% = full rigid, 100% = full liquid */
+  text-align: left; /* resets the default text alignment for the page */
+}
+
+#expander { /* Any % height here causes IE to lose the neg right margin */
+	margin: 0 -450px; /* neg side margin values should be < or = to side body padding */
+	min-width: 900px; /* This prevents Safari from losing the negative margins in narrow windows */ 
+	position: relative; /* makes #expander visible outside #sizer in IEwin */
+} 
+
+/*\*/
+* html #expander {height: 0;} 
+/* #expander must have "height: 0" in IEwin bug fixing */
+
+/* The above is a modified Holly hack for #expander, with zero substituted for the 
+usual 1% height value. Any % value on this element causes a horrendous IE bug! */ 
+
+
+#wrapper1 {
+  position: relative;
+  border: 0px;
+} /* this positioning may be needed for IEwin if page is to contain positioned elements */
+
+#wrapper2 {  
+  position: relative; /* extra insurance against bugs in IEwin */
+  background : url(../img/bg_head3.jpg) no-repeat top left;
+}
+
+
+/****************** Main Page Structure *****************/
+
+/* To modify the side column widths and the col divider widths, the values that are 
+marked "critical" and also refer to the desired mod MUST be changed as a group. */
+
+.outer {
+	border-left: 0px;
+	/*** Critical left divider dimension value ***/
+	border-right: 0px;
+	/*** Critical right divider dimension value ***/
+	margin-left: 250px;
+	/*** Critical left col width value ***/
+	background : url(../img/bg_center2.gif) repeat-y left;
+	position: relative;
+}
+
+.float-wrap {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+
+.left {
+  float: left;
+  position: relative; /* Needed for IE/win */
+  width: 250px;    /*** Critical left col width value ***/
+  margin-left: -250px;    /*** Critical left col width value ***/ /*** Critical left divider dimension value ***/
+}
+
+.centerbox {
+	overflow: visible;
+	width: 100%;
+	position : relative;
+	width: 650px;
+}
+.center {
+	float: right;
+	width: 100%;
+	position: relative;
+}
+
+.centerleft {
+	width : 330px;
+	float : left;
+	background : url(../img/head_grey.jpg) no-repeat top left;
+	position : relative;
+}
+/*
+.centerright {
+	width : 310px;
+	float : left;
+	position : relative;
+	margin-left : 10px;
+}
+*/
+.centerRT {
+	background : url(../img/bg_crt.gif) repeat-y left;
+	position : relative;
+}
+
+.crt {
+	background : url(../img/bg_crt.jpg) no-repeat top left;
+	padding-top : 11px;
+	padding-right : 9px;
+	padding-left : 40px;
+	padding-bottom : 10px;
+	position: relative;
+}
+.crt2 {
+	background : url(../img/bg_crt2.gif) no-repeat bottom;
+}
+
+.container-left {
+	font-size : 0.75em;
+	background : url(../img/bg_left.jpg) repeat-x top;
+	padding-right: 26px;
+	margin: 0;
+	position: relative;
+}
+
+.news .h {
+	color : #958968;
+	font-size : 11px ;
+	font-weight : bold;
+	text-transform : uppercase;
+	background : #DED5BC;
+	line-height : 10px;
+	height : 10px;
+	padding-left : 12px;
+	position : relative;
+}
+.news .h div {
+	padding-left : 3px;
+	padding-right : 3px;
+	background : White;
+	float : left;
+	position : relative;
+}
+.centerleft .h, .centerright .h, .content .h {
+	color : #958968;
+	font-size : 11px ;
+	font-weight : bold;
+	text-transform : uppercase;
+	background : #DED5BC url(../img/bg_h1.jpg) repeat-y left;
+	line-height : 10px;
+	height : 10px;
+	padding-right : 12px;
+	position : relative;
+	margin-top : 11px;
+	margin-right : 9px;
+	margin-left : 40px;
+	margin-bottom : 10px;
+}
+.centerRT .h {
+	color : #C63337;
+	font-size : 11px ;
+	font-weight : bold;
+	text-transform : uppercase;
+	background : #F68084 url(../img/head_red.jpg) repeat-y left;
+	line-height : 10px;
+	height : 10px;
+	padding-right : 12px;
+	position : relative;
+}
+.centerleft .h div, .centerRT .h div, .centerright .h div, .content .h div  {
+	padding-left : 3px;
+	padding-right : 3px;
+	background : White;
+	float : right;
+	position : relative;
+}
+.newsblock {
+	padding-left : 15px;
+	padding-top : 15px;
+}
+
+
+/*************** Header and Footer elements *****************/
+
+.header {
+	width: 100%;
+	height : 300px;
+	background : url(../img/bg_head2.jpg) no-repeat top left;
+	position:relative;
+}
+
+a.search {
+	background : url(../img/search1.gif) no-repeat;
+	display : block;
+	float : left;
+	margin-left : 8px;
+	position: relative ;
+}
+a.search:hover {
+	background : url(../img/search2.gif) no-repeat;
+}
+a.map {
+	background : url(../img/map1.gif) no-repeat;
+	display : block;
+	float : left;
+	margin-left : 8px;
+	position: relative ;
+}
+a.map:hover {
+	background : url(../img/map2.gif) no-repeat;
+}
+a.home {
+	background : url(../img/home1.gif) no-repeat;
+	display : block;
+	float : left;
+	margin-left : 8px;
+	position: relative ;
+}
+a.home:hover {
+	background : url(../img/home2.gif) no-repeat;
+}
+a.mail {
+	background : url(../img/mail1.gif) no-repeat;
+	display : block;
+	float : left;
+	margin-left : 8px;
+	position: relative ;
+}
+a.mail:hover {
+	background : url(../img/mail2.gif) no-repeat;
+}
+.menu {
+	width : 224px;
+	margin-top: 31px;
+	font-size:16px;
+}
+.menu div {
+	line-height : 24px;
+	border-bottom : 2px solid #DED5BC;
+	text-align : right;
+}
+.menu a {
+	color : #C63337;
+	font-size : 0.7em;
+	font-weight : bold;
+	text-transform : uppercase;
+	text-decoration : none;
+	line-height : 24px;
+}
+.menu a:hover {
+	color : #C63337 ;
+	text-decoration : underline;
+}
+
+.footer {
+	width: 100%;
+	clear: both;
+	position: relative;
+	background : #DED5BC;
+	margin-bottom : 0px;
+	color:#80775D;
+	font-size: .7em;
+}
+.copy { width:250px; float:left; line-height:45px;  padding-left:17px; position: relative; }
+.submenu { position:relative; margin-left: 250px;}
+.submenu div { line-height:30px; padding-right: 20px; display:inline; }
+
+.submenu a { color:#80775D; text-decoration:none; }
+.submenu a:hover { text-decoration:underline; color:#80775D; }
+.date { color:#CA383B; font-weight:bold; padding-bottom:10px; font-size:1.1em }
+.more1 { color:#CA383B; font-weight:bold; background:url(../img/bullet-red.gif) no-repeat left; padding-left: 15px; margin-top:10px; }
+.more2 { color:#015F69; font-weight:bold; background:url(../img/bullet-blue.gif) no-repeat right; padding-right: 15px;  text-align:right; position:relative; } 
+.onenews { padding-bottom:20px; }
+.anons {  margin-bottom: 10px; position:relative; }
+.anons2 {  margin-bottom: 10px; position:relative; background:url(../img/bullet-red.gif) top left no-repeat; padding-left:20px; }
+
+/************** Spacing Controls for various column contents ***************/
+
+
+
+.textpadder {
+	padding: 20px;
+	font-size : 0.8em;
+	position: relative;
+}
+
+.arhiv td { font-size : 12px ; color: #C63337; }
+.arhiv select { width:140; border:#DED5BC solid 1px; color:#B9AE90; font-size: 12px}
+
+
+.textpadder h1 {
+	margin : 0;
+	padding : 0;
+	font-size : 1em;
+}
+
+h4 {
+	font-size : 0.8em;
+	font-weight : bold;
+	text-transform : uppercase;
+	color : #4B4B4B;
+}
+
+.red {color:#C63337; }
+.blue {color:#015F69; }
+
+
+
+
+
+/************** Generic Rules *************/
+
+.fleft {
+	float : left;
+	position: relative;
+}
+.fright {
+	float : right;
+	position: relative;
+}
+
+
+
+a {
+	color: #C63337;
+	text-decoration : none;
+}
+a:hover {
+	text-decoration : underline;
+}
+
+a.noline {
+	text-decoration : none;
+}
+a.noline:hover {
+	text-decoration : underline;
+}
+.black { color:#000000; }
+.black:hover { color: #C63337; text-decoration : none; }
+.more2 a { color:#015F69; } .more2 a:hover {color:#015F69; }
+
+p  {
+	margin: .8em 0 0.8em 0;
+}
+
+
+hr {
+	color : White;
+	border-top : 2px solid #DFD5BC;
+	margin-top : 3px; margin-bottom : 3px;
+	height:1px;
+}
+
+.small {
+	font-size: .8em;
+	font-weight : normal;
+}
+
+/************** Special Fixes *************/
+
+.outer {word-wrap: break-word;}
+/* Prevents long urls from breaking layout in IE, must 
+be hidden in a conditional comment for CSS to validate */
+
+
+
+/* \*/
+* html #wrapper1,
+* html #wrapper2,
+* html .container-left, 
+* html .container-right,
+* html .outer,
+* html h2,
+* html .sidenav li a 
+{height: 1%;}
+/* Holly hack */
+
+
+
+
+/**************** Utility Rules *******************/
+
+
+/*\*/ /*/
+.sidenav a:hover {position: relative;}
+/* this fixes an IEmac hover bug in the left column, hidden from other browsers */
+
+.brclear { /* Use a break with this class to clear float containers */
+  clear:both;
+  height:0;
+  margin:0;
+  font-size: 1px;
+  line-height: 0;
+}
+
+
+
+.hide {display: none;}
+
+.cr { float : left; position:relative; margin-left : 10px; width : 310px;}
+
+.preview {
+	float:left;
+	position:relative;
+	background:#ECE6D8;
+	padding: 3px;
+	margin-right: 5px; 
+	margin-bottom:5px;
+	margin-left:0;
+	margin-top: 3px;
+}
+
+.menu a.current {
+    	color:  #166B70;
+}
+.menu a.current:hover {
+    	color:  #166B70;
+	text-decoration : underline;
+}
+
+.flash {
+	position : absolute;
+	top : 100px;
+	left : 250px;
+}
+
+.preview img {
+	width: 85px !important;
+	height: 84px !important;
+}
+#sadasdasd img {
+	width: 300px !important;
+	height: 320px !important;
+}
+.submenu {
+	text-transform: lowercase ;
+}
+.submenu div a {
+	display: inline-block;
+}
+.submenu div a:first-letter {
+	text-transform: uppercase !important;
+}

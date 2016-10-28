@@ -1,0 +1,103 @@
+/* CSS Document */
+
+body { background:#ECE6D8 url(../img/bg_razdel.gif) top repeat-x; }
+.outer {
+	background : none;
+	position: relative;
+}
+.centerbox {
+	width: 100%;
+	background:url(../img/bg_center_grey.gif) repeat-y left  #ffffff;
+}
+.center {background: url(../img/bg_razdel1.gif) top repeat-x; }
+.float-wrap {
+	background:url(../img/bg_center_grey.gif) repeat-y left  #ffffff;
+	border-bottom: #DED5BC solid 2px; 
+}
+.expander { url(../img/bg_head_razdel.jpg) no-repeat top left; }
+.header { background:#FFFFFF url(../img/bg_head_razdel.jpg) no-repeat top left ; width:250px; height:auto;  }
+.headRazdel {background:url(../img/bg_header_razdel.jpg) no-repeat top left; height:243px; }
+.headRazdel2 {background:url(../img/bg_header_razdel.jpg) no-repeat top left; height:60px; text-align:right; }
+.toptopic {background:url(/img/toptopic.jpg) top right no-repeat; height:243px; padding-left:35px}
+.bio {background:url(../img/bio.jpg) top right no-repeat; height:243px; padding-left:35px; padding-top:53px; }
+.position {background:url(../img/pozicia.jpg) top right no-repeat; height:243px; padding-left:35px; padding-top:53px; }
+.today {background:url(../img/today.jpg) top right no-repeat; height:243px; padding-left:35px; padding-top:53px; }
+.publ {background:url(../img/publ.jpg) top right no-repeat; height:243px; padding-left:35px; padding-top:53px; }
+.foto {background:url(../img/foto.jpg) top right no-repeat; height:243px; padding-left:35px; padding-top:53px; }
+.mnenie {background:url(../img/mnenie.jpg) top right no-repeat; height:243px; padding-left:35px; padding-top:53px; }
+.headRazdel p {
+    padding-top:20px;
+    width: 450px ;
+    margin:0;
+    font-size: 0.8em;
+}
+.headrazdel img { margin-top:53px; }
+.content {
+	width: 100% ;
+	float : left;
+	background : url(../img/head_grey2.gif) no-repeat top left;
+	position : relative;
+}
+.container-left {
+	font-size : 0.75em;
+	background : url(../img/bg_left2.jpg) repeat-x top;
+	padding-right: 26px;
+	margin: 0;
+	position: relative;
+	min-height: 333px;
+}
+
+.comment { font-size: 0.9em; font-style: italic; }
+
+.textpadder h1 {
+	margin : 0;
+	padding : 0;
+	font-size : 1.1em;
+}
+
+.otvet {padding-left: 60px; }
+
+.photo {width:204px; height:204px; padding:0; }
+.photocont { width:204px; height:270px; background:#ECE6D8; border:2px solid #DED5BC; }
+
+.photo2 {background:#ECE6D8; border:2px solid #DED5BC;  margin: 20px; float:left; padding:0; }
+
+.centerbox td { font-size : 0.8em; color: #000000; }
+.centerbox input, .centerbox select { width:200px; border:#DED5BC solid 1px; color:#000000; }
+.centerbox textarea { width:400px; height:100px; border:#DED5BC solid 1px; color:#000000; }
+input.send { width:138px; }
+
+.prev { float:left; font-weight:bold; color:#C63337; font-size:0.95em; position:relative; background:url(../img/bullet-red2.gif) no-repeat left; line-height:12px; padding-left:17px; }
+.next { float:right; font-weight:bold; color:#C63337; font-size:0.95em; position:relative; background:url(../img/bullet-red.gif) no-repeat right; line-height:12px; padding-right:17px; }
+
+
+.map li {list-style-image:url(../img/bullet-blue.gif); list-style-position:inside; margin:3px; font-weight:bold; }
+.map ul {padding-left:20px; padding-bottom:8px; }
+.map ul ul li { font-weight:normal; }
+.map ul a {color:#015F69;}
+
+div.smenu {border: none; margin-bottom: 10px; }
+.smenu div { background:url(../img/bullet_smenu.gif) right no-repeat; font-size:0.9em; color:#1F7073; border:0; padding:0; padding-right:15px; height: auto; }
+.smenu a {
+	color : #C63337;
+	font-weight : bold;
+	text-transform : uppercase;
+	text-decoration : none;
+	line-height : 18px;
+}
+.smenu a:hover {
+	color : #C63337 ;
+	text-decoration: underline;
+}
+
+.black {color:#000000; }
+
+input.search { width: 138px ; height: 21px }
+
+.img {float:right; padding:5px; background:#DED5BC; margin-left: 5px; margin-bottom: 5px; margin-top:5px; }
+
+.comment2 { font-size: 0.85em;  }
+
+.textpadder h1 {
+	width: 90%;
+}
