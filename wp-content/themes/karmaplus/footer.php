@@ -1,47 +1,46 @@
 <?php $root = get_bloginfo('template_url'); ?>
-<br class="brclear">
-
-</div> <!-- end .float-wrap -->
-<br class="brclear">
-</div><!-- end .outer -->
-</div><!-- end #wrapper2 -->
-</div><!-- end #wrapper1 -->
-
-<img src="<?=$root;?>/img/bg_bottom.gif" width="900" height="6" border="0"><br>
-
-<!--LiveInternet counter--><script type="text/javascript"><!--
-document.write("<a href='http://www.liveinternet.ru/click' "+
-"target=_blank><img src='http://counter.yadro.ru/hit?t25.2;r"+
-escape(document.referrer)+((typeof(screen)=="undefined")?"":
-";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
-screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
-";"+Math.random()+
-"' alt='' title='LiveInternet: Ї®Є § ­® зЁб«® Ї®бҐвЁвҐ«Ґ© § "+
-" бҐЈ®¤­п' "+
-"border=0 width=88 height=15><\/a>")//--></script><!--/LiveInternet-->
-
-<br>
-<div class="footer">
-<div class="copy">&copy; <?php echo $_SERVER['HTTP_HOST']; ?> 2016</div>
-  <div class="submenu">
-<div><a href=<?=get_page_link(5);?>><?=get_the_title(5);?></a></div>
-<div><a href=<?=get_page_link(7);?>><?=get_the_title(7);?></a></div>
-
-<div><a href=<?=get_page_link(20);?>><?=get_the_title(20);?></a></div>
-<div><a href=<?=get_page_link(11);?>><?=get_the_title(11);?></a></div>
-<div><a href=<?=get_page_link(14);?>><?=get_the_title(14);?></a></div>
-<div><a href=<?=get_page_link(16);?>><?=get_the_title(16);?></a></div>
-<div><a href=<?=get_page_link(18);?>><?=get_the_title(18);?></a></div>
-  <br class="brclear">
-  </div>
-
 </div>
-</div><!-- end #expander -->
-</div><!-- end #sizer -->
-	
-	<!--<script src='<?=$root;?>/js/jquery-1.8.3.min.js'></script>
-	<script src='<?=$root;?>/js/script.js'></script>-->
-	
+<div id="chats">
+<div id="live-chat">
+	<header class="clearfix">
+		<h4>Чат с оператором</h4>
+	</header>
+	<div class="chat">
+		<center><span id="info"></span></center>
+		<div class="row">
+			<div class="col-md-12">
+				<form action="javascript: void(0);" method="post" onsubmit="startChat()" class="form-horizontal">
+					<div class="col-lg-offset-1">
+						<div class="form-group">
+							<label>Ваше имя:</label>
+							<input type="text" id="Name">
+						</div>
+					</div>
+					<div class="col-lg-offset-1">
+						<div class="form-group">
+							<label>Текст обращения:</label>
+							<input type="text" id="Text">
+						</div>
+					</div>
+					<button class="btn btn-success btn-block">Начать чат</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<script>
+$(document).ready(function(){
+var citiesParams = { "header" : "Выберите город" };
+var districtParams= { "header" : "Выберите район" };
+$('#cities').tinyNav(citiesParams);
+$('#districts').tinyNav(districtParams);
+});
+</script>
+</div>
+<div id="bottom-text"><img src="https://chem24.bz/template/style_site_chem24.bz/img/crown-hover.png?1593567" style="display:none;"></div>
+<script type="text/javascript" src="https://chem24.bz/template/style_site_chem24.bz/js/script.js?784849"></script>
+
 <?php wp_footer(); ?>
 </body>
 </html>
