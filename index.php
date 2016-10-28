@@ -1,3 +1,2 @@
-Hello <? $a = 5; echo "World, "; ?>
-<?=$a;?>
-<?php phpinfo(); ?>
+Hello <? echo "World"; ?>
+<br>
