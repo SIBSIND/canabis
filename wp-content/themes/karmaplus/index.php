@@ -18,7 +18,7 @@ get_header();
        ?>
    </ul>
    <ul id="districts">
-      <li class="selected" ><a href="/index.php/home/city/1">Все</a></li>
+      <li class="selected" ><a href="/index.php/category/all">Все</a></li>
    </ul>
    <div class="products">
       <ul>
